@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+        "outDir": "dist",
+        "target": "es5",
+        "lib": [
+            "es2021",
+            "dom"
+        ],
+        "allowSyntheticDefaultImports": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "noImplicitReturns": true,
+        "noErrorTruncation": true,
+        "noImplicitThis": false,
+        "noUnusedParameters": true,
+        "preserveConstEnums": true,
+        "removeComments": false,
+        "sourceMap": true,
+        "strict": true,
+        "declaration": true,
+        "esModuleInterop": true,
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "rootDir": "src",
+        "downlevelIteration": true
+    },
+}

@@ -12,6 +12,10 @@ const CHAINS = Object.freeze([
   new Chain(NETWORKS.BITCOIN, 2, "testnet", false),
 ]);
 
+export function getNetworks() {
+  return NETWORKS;
+}
+
 export function getChainByName(
   networkName: string,
   chainName: string

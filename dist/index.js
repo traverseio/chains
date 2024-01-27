@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getChainByID = exports.getChainByName = void 0;
+exports.getChainByID = exports.getChainByName = exports.getNetworks = void 0;
 var chain_1 = require("./chain");
 var NETWORKS = {
     ETHEREUM: new chain_1.Network(1, "ethereum", "eth"),
@@ -12,6 +12,10 @@ var CHAINS = Object.freeze([
     new chain_1.Chain(NETWORKS.BITCOIN, 1, "mainnet", true),
     new chain_1.Chain(NETWORKS.BITCOIN, 2, "testnet", false),
 ]);
+function getNetworks() {
+    return NETWORKS;
+}
+exports.getNetworks = getNetworks;
 function getChainByName(networkName, chainName) {
     return CHAINS.find(function (chain) {
         return chain.getNetwork().getName() === networkName &&

@@ -12,31 +12,23 @@ const CHAINS = Object.freeze([
   new Chain(NETWORKS.BITCOIN, 2, "testnet", false),
 ]);
 
-export function getChainByName(networkName: string, chainName: string): Chain {
-  const result = CHAINS.find(
+export function getChainByName(
+  networkName: string,
+  chainName: string
+): Chain | undefined {
+  return CHAINS.find(
     (chain) =>
       chain.getNetwork().getName() === networkName &&
       chain.getName() === chainName
   );
-
-  if (!result)
-    throw new Error(
-      `Unsupported chain: networkName=${networkName} chainName=${chainName}`
-    );
-
-  return result;
 }
 
-export function getChainByID(networkID: number, chainID: number): Chain {
-  const result = CHAINS.find(
+export function getChainByID(
+  networkID: number,
+  chainID: number
+): Chain | undefined {
+  return CHAINS.find(
     (chain) =>
       chain.getNetwork().getID() === networkID && chain.getID() === chainID
   );
-
-  if (!result)
-    throw new Error(
-      `Unsupported chain: networkID=${networkID} chainID=${chainID}`
-    );
-
-  return result;
 }

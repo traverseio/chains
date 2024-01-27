@@ -1,11 +1,3 @@
 import { Chain } from "./chain";
-export declare const SUPPORTED_CHAINS: Readonly<{
-    ETHEREUM: {
-        MAINNET: Chain;
-        GOERLI: Chain;
-    };
-    BITCOIN: {
-        MAINNET: Chain;
-        TESTNET: Chain;
-    };
-}>;
+export declare function getChainByName(networkName: string, chainName: string): Chain;
+export declare function getChainByID(networkID: number, chainID: number): Chain;

@@ -1,5 +1,5 @@
 {
-  "name": "@traverseio/networks",
+  "name": "@traverseio/chains",
   "version": "1.0.0",
   "description": "",
   "main": "./dist/index.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/traverseio/networks.git"
+    "url": "git+https://github.com/traverseio/chains.git"
   },
   "author": "kareemfakhuri",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/traverseio/networks/issues"
+    "url": "https://github.com/traverseio/chains/issues"
   },
-  "homepage": "https://github.com/traverseio/networks#readme",
+  "homepage": "https://github.com/traverseio/chains#readme",
   "dependencies": {
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3"

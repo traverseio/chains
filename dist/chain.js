@@ -36,6 +36,9 @@ var Chain = /** @class */ (function () {
     Chain.prototype.getNetwork = function () {
         return this.network;
     };
+    Chain.prototype.getNetworkID = function () {
+        return this.network.getID();
+    };
     Chain.prototype.getID = function () {
         return this.id;
     };

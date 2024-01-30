@@ -57,6 +57,10 @@ export class Chain {
     return this.network;
   }
 
+  public getNetworkID(): number {
+    return this.network.getID();
+  }
+
   public getID(): number {
     return this.id;
   }

@@ -19,6 +19,7 @@ export declare class Chain {
     private mainnet;
     constructor(network: Network, id: number, name: string, isMainnet: boolean);
     getNetwork(): Network;
+    getNetworkID(): number;
     getID(): number;
     getName(): string;
     isMainnet(): boolean;
